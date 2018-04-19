@@ -27,7 +27,7 @@ class SkinLayoutFactory(private val activity: Activity, skinTypeface: Typeface) 
         skinAttribute = SkinAttribute(skinTypeface)
     }
 
-    override fun onCreateView(parent: View, name: String, context: Context, attrs: AttributeSet): View {
+    override fun onCreateView(parent: View?, name: String, context: Context, attrs: AttributeSet): View? {
         //反射 classloader
         var view = createViewFromTag(name, context, attrs)
         // 自定义View
