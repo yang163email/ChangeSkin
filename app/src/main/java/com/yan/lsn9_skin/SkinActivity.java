@@ -22,7 +22,7 @@ public class SkinActivity extends Activity {
 
     public void change(View view) {
         //换肤
-        SkinManager.getInstance().loadSkin("/sdcard/app-skin-debug.apk");
+        SkinManager.getInstance().loadSkin("/sdcard/app-skin-debug.skin");
     }
 
     public void restore(View view) {
